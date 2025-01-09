@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <script defer src="src/index.js"></script>
+</head>
+<body>
+  <main>
+
+    <form>
+      <h2>Contact Form</h2>
+      <!-- Name Field -->
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <!-- Email Field -->
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- Phone Number Field -->
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" required><br><br>
+
+      <!-- Reason for Contact Field -->
+      <label for="reason">Reason for Contact:</label><br>
+      <select id="reason" name="reason" required>
+          <option value="inquiry">Inquiry</option>
+          <option value="support">Support</option>
+          <option value="feedback">Feedback</option>
+          <option value="other">Other</option>
+      </select><br><br>
+
+      <!-- Message Field -->
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" ></textarea><br><br>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+    <section class="confirmation"></section>
+  </main> 
+
+</body>
+</html>
